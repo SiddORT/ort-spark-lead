@@ -150,7 +150,7 @@ export function AuthPage() {
             display: "inline-flex",
             alignItems: "center",
             justifyContent: "center",
-            width: 120, height: 56,
+            width: 200, height: 90,
             marginBottom: 16,
             overflow: "hidden",
           }}>

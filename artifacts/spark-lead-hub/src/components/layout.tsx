@@ -160,7 +160,7 @@ export function Layout({ children }: { children: React.ReactNode }) {
           flexShrink: 0,
         }}>
           <div style={{
-            width: 32, height: 32,
+            width: 56, height: 36,
             display: "flex", alignItems: "center", justifyContent: "center",
             flexShrink: 0,
             overflow: "hidden",
