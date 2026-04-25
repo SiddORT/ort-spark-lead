@@ -22,9 +22,9 @@
   --border-strong:  hsl(222, 15%, 35%);
 
   /* --- Brand / Accent Colors --- */
-  --teal:           hsl(172, 75%, 48%);
-  --teal-dim:       hsl(172 75% 48% / 0.15);
-  --teal-glow:      0 0 12px hsl(172 75% 48% / 0.4), 0 0 40px hsl(172 75% 48% / 0.15);
+  --teal:           hsl(220, 90%, 60%);
+  --teal-dim:       hsl(220 90% 60% / 0.15);
+  --teal-glow:      0 0 12px hsl(220 90% 60% / 0.4), 0 0 40px hsl(220 90% 60% / 0.15);
   --purple:         hsl(262, 65%, 62%);
   --purple-dim:     hsl(262 65% 62% / 0.15);
 
@@ -127,14 +127,14 @@
   --foreground: 210 30% 94%;
   --border: 222 15% 20%;
   --input: 222 15% 25%;
-  --ring: 172 75% 48%;
+  --ring: 220 90% 60%;
   --card: 222 20% 9%;
   --card-foreground: 210 30% 94%;
   --card-border: 222 15% 20%;
   --popover: 222 18% 12%;
   --popover-foreground: 210 30% 94%;
   --popover-border: 222 15% 20%;
-  --primary: 172 75% 48%;
+  --primary: 220 90% 60%;
   --primary-foreground: 222 22% 6%;
   --secondary: 222 16% 14%;
   --secondary-foreground: 210 30% 94%;
@@ -146,7 +146,7 @@
   --destructive-foreground: 0 0% 100%;
   --success: 152 60% 44%;
   --warning: 38 90% 54%;
-  --chart-1: 172 75% 48%;
+  --chart-1: 220 90% 60%;
   --chart-2: 262 65% 62%;
   --chart-3: 38 90% 54%;
   --chart-4: 152 60% 44%;
@@ -154,12 +154,12 @@
   --sidebar: 222 20% 9%;
   --sidebar-foreground: 210 30% 94%;
   --sidebar-border: 222 15% 20%;
-  --sidebar-primary: 172 75% 48%;
+  --sidebar-primary: 220 90% 60%;
   --sidebar-primary-foreground: 222 22% 6%;
   --sidebar-accent: 262 65% 62%;
   --sidebar-accent-foreground: 210 30% 94%;
-  --sidebar-ring: 172 75% 48%;
-  --neon-glow: 172 75% 48%;
+  --sidebar-ring: 220 90% 60%;
+  --neon-glow: 220 90% 60%;
   --app-font-sans: 'DM Sans', sans-serif;
   --app-font-display: 'Syne', sans-serif;
   --app-font-serif: Georgia, serif;
@@ -177,9 +177,9 @@
   --muted-border: hsl(var(--muted));
   --accent-border: hsl(var(--accent));
   --destructive-border: hsl(var(--destructive));
-  --shadow-2xs: 0px 2px 0px 0px hsl(172 75% 48% / 0.00);
-  --shadow-xs: 0px 2px 0px 0px hsl(172 75% 48% / 0.00);
-  --shadow-sm-tw: 0px 2px 0px 0px hsl(172 75% 48% / 0.05), 0px 1px 2px -1px hsl(172 75% 48% / 0.05);
+  --shadow-2xs: 0px 2px 0px 0px hsl(220 90% 60% / 0.00);
+  --shadow-xs: 0px 2px 0px 0px hsl(220 90% 60% / 0.00);
+  --shadow-sm-tw: 0px 2px 0px 0px hsl(220 90% 60% / 0.05), 0px 1px 2px -1px hsl(220 90% 60% / 0.05);
   --tracking-normal: 0em;
   --spacing: 0.25rem;
 }
@@ -261,7 +261,7 @@ h1, h2, h3, h4, h5, h6, .font-display {
 
 a { color: var(--teal); text-decoration: none; }
 a:hover { opacity: 0.85; }
-::selection { background: hsl(172 75% 48% / 0.25); }
+::selection { background: hsl(220 90% 60% / 0.25); }
 
 /* Scrollbar */
 ::-webkit-scrollbar { width: 5px; height: 5px; }
@@ -680,7 +680,7 @@ a:hover { opacity: 0.85; }
 .input::placeholder { color: var(--text-muted); }
 .input:focus, .select-field:focus {
   border-color: var(--teal);
-  box-shadow: 0 0 0 3px hsl(172 75% 48% / 0.15);
+  box-shadow: 0 0 0 3px hsl(220 90% 60% / 0.15);
 }
 .input-label {
   display: block;
@@ -1126,7 +1126,7 @@ a:hover { opacity: 0.85; }
 .form-select:focus,
 .form-textarea:focus {
   border-color: var(--teal);
-  box-shadow: 0 0 0 3px hsl(172, 75%, 48%, 0.18);
+  box-shadow: 0 0 0 3px hsl(220, 90%, 60%, 0.18);
   background: var(--bg-overlay);
 }
 .form-input.error,
@@ -1230,7 +1230,7 @@ a:hover { opacity: 0.85; }
   border: 1.5px solid transparent;
 }
 .checkbox-item:hover { background: var(--bg-subtle); }
-.checkbox-item.checked { background: var(--teal-dim); border-color: hsl(172, 75%, 48%, 0.3); }
+.checkbox-item.checked { background: var(--teal-dim); border-color: hsl(220, 90%, 60%, 0.3); }
 .checkbox-box {
   width: 18px; height: 18px;
   border-radius: 4px;
@@ -1389,7 +1389,7 @@ a:hover { opacity: 0.85; }
 .field-select:focus,
 .field-textarea:focus {
   border-color: var(--teal);
-  box-shadow: 0 0 0 3px hsl(172, 75%, 48%, 0.18);
+  box-shadow: 0 0 0 3px hsl(220, 90%, 60%, 0.18);
   background: var(--bg-overlay);
 }
 .field-textarea {
@@ -1449,7 +1449,7 @@ a:hover { opacity: 0.85; }
   position: absolute;
   top: -160px; right: -160px;
   width: 420px; height: 420px;
-  background: hsl(172, 75%, 48%, 0.08);
+  background: hsl(220, 90%, 60%, 0.08);
   border-radius: var(--r-full);
   filter: blur(80px);
   pointer-events: none;
@@ -1486,7 +1486,7 @@ a:hover { opacity: 0.85; }
 .auth-brand-icon {
   width: 44px; height: 44px;
   background: var(--teal-dim);
-  border: 1px solid hsla(172, 75%, 48%, 0.35);
+  border: 1px solid hsla(220, 90%, 60%, 0.35);
   border-radius: var(--r-lg);
   display: flex; align-items: center; justify-content: center;
   color: var(--teal);
@@ -1836,7 +1836,7 @@ a:hover { opacity: 0.85; }
 .company-chip-select:focus-within,
 .company-chip-select.open {
   border-color: var(--teal);
-  box-shadow: 0 0 0 3px hsl(172, 75%, 48%, 0.18);
+  box-shadow: 0 0 0 3px hsl(220, 90%, 60%, 0.18);
 }
 .company-chip {
   display: inline-flex;

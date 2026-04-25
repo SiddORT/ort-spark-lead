@@ -1,7 +1,7 @@
 import { useState, useEffect } from "react";
 import { useLocation } from "wouter";
 import { useAuth } from "@/components/auth-provider";
-import { Zap, Eye, EyeOff } from "lucide-react";
+import { Eye, EyeOff } from "lucide-react";
 
 const inputBase: React.CSSProperties = {
   width: "100%",
@@ -26,7 +26,7 @@ function AuthInput(props: React.InputHTMLAttributes<HTMLInputElement>) {
         ...inputBase,
         ...(focused ? {
           borderColor: "var(--teal)",
-          boxShadow: "0 0 0 3px hsl(172 75% 48% / 0.14), 0 0 10px hsl(172 75% 48% / 0.12)",
+          boxShadow: "0 0 0 3px hsl(220 90% 60% / 0.14), 0 0 10px hsl(220 90% 60% / 0.12)",
           background: "hsl(222 22% 12% / 0.9)",
         } : {}),
         ...props.style,
@@ -124,14 +124,14 @@ export function AuthPage() {
           position: "absolute", top: "50%", left: "50%",
           transform: "translate(-50%, -60%)",
           width: 600, height: 600,
-          background: "radial-gradient(ellipse at center, hsl(172 75% 48% / 0.12) 0%, transparent 70%)",
+          background: "radial-gradient(ellipse at center, hsl(220 90% 60% / 0.12) 0%, transparent 70%)",
           pointerEvents: "none",
         }} />
         {/* Teal top-left */}
         <div style={{
           position: "absolute", top: "-80px", left: "-80px",
           width: 360, height: 360,
-          background: "radial-gradient(ellipse at center, hsl(172 75% 48% / 0.1) 0%, transparent 70%)",
+          background: "radial-gradient(ellipse at center, hsl(220 90% 60% / 0.1) 0%, transparent 70%)",
         }} />
         {/* Purple bottom-right */}
         <div style={{
@@ -148,14 +148,11 @@ export function AuthPage() {
             display: "inline-flex",
             alignItems: "center",
             justifyContent: "center",
-            width: 56, height: 56,
-            background: "hsl(172 75% 48% / 0.12)",
-            border: "1px solid hsl(172 75% 48% / 0.3)",
-            borderRadius: "var(--radius-lg)",
+            width: 120, height: 56,
             marginBottom: 16,
-            boxShadow: "0 0 24px hsl(172 75% 48% / 0.2)",
+            overflow: "hidden",
           }}>
-            <Zap size={26} style={{ color: "var(--teal)" }} />
+            <img src="/sparklead-logo.jpg" alt="SparkLead" style={{ width: "100%", height: "100%", objectFit: "contain" }} />
           </div>
           <div style={{
             fontFamily: "var(--font-display)",
@@ -164,13 +161,13 @@ export function AuthPage() {
             color: "var(--teal)",
             letterSpacing: "-0.02em",
             lineHeight: 1,
-            filter: "drop-shadow(0 0 18px hsl(172 75% 48% / 0.45))",
+            filter: "drop-shadow(0 0 18px hsl(220 90% 60% / 0.45))",
             marginBottom: 8,
           }}>
-            LeadFlow
+            SparkLead
           </div>
           <div style={{ fontSize: "var(--text-sm)", color: "var(--text-muted)", letterSpacing: "0.02em" }}>
-            Spark Lead Hub — Team Access Only
+            SparkLead — Team Access Only
           </div>
         </div>
 
@@ -182,7 +179,7 @@ export function AuthPage() {
           border: "1px solid rgba(255, 255, 255, 0.1)",
           borderRadius: "var(--radius-lg)",
           padding: 40,
-          boxShadow: "0 32px 64px hsl(222 30% 2% / 0.7), 0 0 0 1px hsl(172 75% 48% / 0.06)",
+          boxShadow: "0 32px 64px hsl(222 30% 2% / 0.7), 0 0 0 1px hsl(220 90% 60% / 0.06)",
         }}>
           <h2 style={{
             fontFamily: "var(--font-display)",
@@ -285,7 +282,7 @@ export function AuthPage() {
                 opacity: loading ? 0.6 : 1,
                 transform: btnActive ? "scale(0.97)" : "scale(1)",
                 filter: btnHover && !loading ? "brightness(1.12)" : "none",
-                boxShadow: btnHover && !loading ? "0 0 20px hsl(172 75% 48% / 0.35)" : "none",
+                boxShadow: btnHover && !loading ? "0 0 20px hsl(220 90% 60% / 0.35)" : "none",
                 transition: "transform 120ms ease, filter 150ms ease, box-shadow 150ms ease",
                 display: "flex",
                 alignItems: "center",
