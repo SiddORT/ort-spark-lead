@@ -165,7 +165,7 @@ export function Layout({ children }: { children: React.ReactNode }) {
             flexShrink: 0,
             overflow: "hidden",
           }}>
-            <img src="/sparklead-logo.png" alt="SparkLead" style={{ width: "100%", height: "100%", objectFit: "contain", filter: theme === "dark" ? "invert(1) hue-rotate(180deg)" : "none" }} />
+            <img src={theme === "dark" ? "/sparklead-logo.png" : "/sparklead-logo-light.jpg"} alt="SparkLead" style={{ width: "100%", height: "100%", objectFit: "contain", filter: theme === "dark" ? "invert(1) hue-rotate(180deg)" : "none" }} />
           </div>
           {!collapsed && (
             <span style={{
