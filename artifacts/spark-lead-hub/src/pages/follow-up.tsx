@@ -195,8 +195,8 @@ export function FollowUp() {
           <div style={{
             display: "flex", alignItems: "center", gap: 6,
             padding: "4px 12px",
-            background: "hsl(220 90% 60% / 0.08)",
-            border: "1px solid hsl(220 90% 60% / 0.2)",
+            background: "hsl(196 92% 47% / 0.08)",
+            border: "1px solid hsl(196 92% 47% / 0.2)",
             borderRadius: "var(--radius-full)",
             fontSize: "var(--text-xs)", fontWeight: 600, color: "var(--teal)",
           }}>
@@ -255,7 +255,7 @@ export function FollowUp() {
             }}
             onFocus={e => {
               e.currentTarget.style.borderColor = "var(--teal)";
-              e.currentTarget.style.boxShadow   = "0 0 0 3px hsl(220 90% 60% / 0.12), 0 0 8px hsl(220 90% 60% / 0.12)";
+              e.currentTarget.style.boxShadow   = "0 0 0 3px hsl(196 92% 47% / 0.12), 0 0 8px hsl(196 92% 47% / 0.12)";
             }}
             onBlur={e => {
               e.currentTarget.style.borderColor = "var(--border-default)";
@@ -456,8 +456,8 @@ export function FollowUp() {
                             <div style={{ display: "flex", flexWrap: "nowrap", gap: 3, overflow: "hidden" }}>
                               <span style={{
                                 display: "inline-block", padding: "1px 7px",
-                                background: "hsl(220 90% 60% / 0.1)",
-                                border: "1px solid hsl(220 90% 60% / 0.25)",
+                                background: "hsl(196 92% 47% / 0.1)",
+                                border: "1px solid hsl(196 92% 47% / 0.25)",
                                 borderRadius: "var(--radius-full)",
                                 color: "var(--teal)", fontSize: 10, fontWeight: 600,
                                 lineHeight: 1.8, whiteSpace: "nowrap",

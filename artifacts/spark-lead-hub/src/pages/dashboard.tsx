@@ -440,8 +440,8 @@ export function Dashboard() {
                       style={{
                         display: "inline-block",
                         padding: "1px 7px",
-                        background: "hsl(220 90% 60% / 0.1)",
-                        border: "1px solid hsl(220 90% 60% / 0.25)",
+                        background: "hsl(196 92% 47% / 0.1)",
+                        border: "1px solid hsl(196 92% 47% / 0.25)",
                         borderRadius: "var(--radius-full)",
                         color: "var(--teal)",
                         fontSize: 10,
@@ -586,8 +586,8 @@ export function Dashboard() {
             <AreaChart data={trendData}>
               <defs>
                 <linearGradient id="tealGrad" x1="0" y1="0" x2="0" y2="1">
-                  <stop offset="5%"  stopColor="hsl(220 90% 60%)" stopOpacity={0.3} />
-                  <stop offset="95%" stopColor="hsl(220 90% 60%)" stopOpacity={0} />
+                  <stop offset="5%"  stopColor="hsl(196 92% 47%)" stopOpacity={0.3} />
+                  <stop offset="95%" stopColor="hsl(196 92% 47%)" stopOpacity={0} />
                 </linearGradient>
               </defs>
               <XAxis dataKey="date" stroke="var(--text-muted)" fontSize={11} tickLine={false} axisLine={false} tickFormatter={d => d.slice(5)} />
@@ -596,7 +596,7 @@ export function Dashboard() {
                 cursor={{ stroke: "var(--border-default)" }}
                 content={<AreaTooltip />}
               />
-              <Area type="monotone" dataKey="count" stroke="hsl(220 90% 60%)" strokeWidth={2.5} fillOpacity={1} fill="url(#tealGrad)" />
+              <Area type="monotone" dataKey="count" stroke="hsl(196 92% 47%)" strokeWidth={2.5} fillOpacity={1} fill="url(#tealGrad)" />
             </AreaChart>
           </ResponsiveContainer>
         </div>
@@ -615,8 +615,8 @@ export function Dashboard() {
                   gap: 5,
                   height: 28,
                   padding: "0 10px",
-                  background: showLegendPopover ? "hsl(220 90% 60% / 0.12)" : "transparent",
-                  border: `1px solid ${showLegendPopover ? "hsl(220 90% 60% / 0.4)" : "var(--border-default)"}`,
+                  background: showLegendPopover ? "hsl(196 92% 47% / 0.12)" : "transparent",
+                  border: `1px solid ${showLegendPopover ? "hsl(196 92% 47% / 0.4)" : "var(--border-default)"}`,
                   borderRadius: "var(--radius-md)",
                   color: showLegendPopover ? "var(--teal)" : "var(--text-muted)",
                   fontSize: "var(--text-xs)",
@@ -628,8 +628,8 @@ export function Dashboard() {
                 }}
                 onMouseEnter={e => {
                   if (!showLegendPopover) {
-                    e.currentTarget.style.background = "hsl(220 90% 60% / 0.06)";
-                    e.currentTarget.style.borderColor = "hsl(220 90% 60% / 0.25)";
+                    e.currentTarget.style.background = "hsl(196 92% 47% / 0.06)";
+                    e.currentTarget.style.borderColor = "hsl(196 92% 47% / 0.25)";
                     e.currentTarget.style.color = "var(--text-secondary)";
                   }
                 }}
@@ -827,7 +827,7 @@ export function Dashboard() {
             }}
             onFocus={e => {
               e.currentTarget.style.borderColor = "var(--teal)";
-              e.currentTarget.style.boxShadow   = "0 0 0 3px hsl(220 90% 60% / 0.12), 0 0 8px hsl(220 90% 60% / 0.12)";
+              e.currentTarget.style.boxShadow   = "0 0 0 3px hsl(196 92% 47% / 0.12), 0 0 8px hsl(196 92% 47% / 0.12)";
             }}
             onBlur={e => {
               e.currentTarget.style.borderColor = "var(--border-default)";
